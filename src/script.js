@@ -23,10 +23,14 @@ scene.add(cubeMesh)
 //   0.1,
 //   200)
 
+
+// Orthographic Camera
+const aspectRatio = window.innerWidth / window.innerHeight
+
 const camera = new THREE.OrthographicCamera(
-  -1,
-1,
-1,
+  -1 *aspectRatio,
+  1 *aspectRatio,
+  1,
 -1,
 0.1,
 200
